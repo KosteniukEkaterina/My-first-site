@@ -1,68 +1,182 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device=width, initial-scale=1.0">
-
-        <title>Конный Клуб "Бельцы"</title>
-        
-        <link rel="stylesheet" href="style.css">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta
+            name="description"
+            content="Discover horse riding, outdoor adventures and unforgettable moments at Horse Club Bălți"
+            >
+        <title>"Horse Club Bălți"</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
-        
-        <header class="header">
-            <div class="logo">
-                Конный <span>Клуб</span>
-            </div>
+        <header class="site-header">
+            <div class="container-header-inner">
 
-            <nav class="nav">
-                <a href="#about">О клубе</a>
-                <a href="#services">Услуги</a>
-                <a href="#horses">Лошади</a>
-                <a href="#contacts">Контакты</a>
+                <a href="index.html"class="logo" aria-label="Horse Club Bălți - Home">
+                    <span class="logo-main">HORSE CLUB</span>
+                    <span class="logo-sub">BĂLȚI · MOLDOVA</span>
+                </a>
+
+             <button
+               class="menu-toggle"
+               type="button"
+               aria-label="Open navigation menu"
+               aria-expanded="false"
+               aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            </button>
+            
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="horses.html" class="nav-link">Our Horses</a>
+                <a href="schedule.html" class="nav-link">Schedule</a>
+                <a href="contacts.html" class="nav-link nav-contact">Contact Us</a>
             </nav>
-
-            <a href="#contacts" class="header-button">Записаться</a>
+            
+            </div>
         </header>
-        <section class="hero">
-            <div class="hero-overlay"></div>
-            <div class="hero-content"></div>
-                <p class="small-title">КОННЫЙ КЛУБ - БЕЛЬЦЫ</p>
-                <h1>
-                    Там, где<br>
-                    сбываются <i>мечты</i>
-                </h1>
-                <p class="hero-text">
-                    Верховая езда, прогулки и тренировки для тех, кто хочет почувствовать настоящую связь с лошадью.
+
+        <main>
+            <section class="hero">
+                <div class="hero-image" role="img"
+                   aria-label="Horse standing in a natural landscape">
+                </div>
+                <div class="hero-shade"></div>
+                <div class="container hero-inner">
+                    <p class="eyebrow">
+                        HORSE CLUB BĂLȚI · EST. IN PASSION
+                    </p>
+                     <h1>
+                        A timeless<br>
+                        <span>bond.</span>
+                     </h1>
+                     <p class="hero-description">
+                        More than ride. A connection between 
+                        freedom, nature and the spirit of the horse.
+                     </p>
+                     <a href="contacts.html" class="button button-gold">
+                        Book your ride
+                        <span aria hidden="true">↗</span>
+                     </a>
+                     <div class="hero-bottom">
+                        <span>DISCOVER THE ART OF RIDING</span>
+                        <span class="hero-index">01 - 05</span>
+                     </div>
+                </div>
+            </section>
+
+            <section class="about section-padding">
+                <div class="container about-grid">
+                    <div class="about-heading">
+                        <p class="eyebrow">OUR PHILOSOPHY</p>
+                        <h2>
+                            Where elegance<br>
+                            meets<span> freedom.</span>
+                        </h2>
+                </div>
+                <div class="about-content">
+                    <p>
+                        Horse Club Bălți is a place for everyone
+                        who wants to discover the world of horses.
+                        From your very first lesson to confident
+                        riding, we vreate an experience built on
+                        care, patience and a genuine connection
+                        with these remarkable animals.
+                    </p>
+                    <a href="services.html" class="text-link">
+                        Discover our world <span>↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="services-preview section-padding">
+                <div class="container">
+                    <div class="section-heading">
+                        <div>
+                            <p class="eyebrow">THE EXPERIENCE</p>
+                            <h2>Find your own rhytm.</h2>
+                        </div>
+                        <a href="services.html" class="text-link">
+                            All services <span>↗</span>
+                        </a>
+                    </div>
+                    <div class="service-grid">
+                        <a href="services.html#riding" class="service-card">
+                            <span class="service-number">01</span>
+                            <div class="service-card-content">
+                                <p>FOR EVERY GENERATION</p>
+                                <h3>Horse Riding</h3>
+                                <span class="card-arrow">↗</span>
+                            </div>
+                        </a>
+                        <a href="services.html#trails" class="service-card">
+                            <span class="service-number">02</span>
+                            <div class="service-card-content">
+                                <p>BEYOND THE ORDINARY</p>
+                                <h3>Trail Rides</h3>
+                                <span class="card-arrow">↗</span>
+                            </div>
+                        </a>
+                        <a href="horses.html" class="service-card">
+                            <span class="service-number">03</span>
+                            <div class="service-card-content">
+                                <p>MEET YOUR COMPANION</p>
+                                <h3>Our Horses</h3>
+                                <span class="card-arrow">↗</span>
+                            </div>
+                        </a>
+                        <a href="services.html#cafe" class="service-card">
+                            <span class="service-number">04</span>
+                            <div class="service-card-content">
+                                <p>A MOMENT TO YOURSELF</p>
+                                <h3>Stable Cafe</h3>
+                                <span class="card-arrow">↗</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="visit-section">
+                <div class="container visit-inner">
+                    <div>
+                        <p class="eyebrow">YOUR NEXT CHAPTER</p>
+                        <h2>We look forward<br> to welcoming you.</h2>
+                    </div>
+                    <div class="visit-hours">
+                        <span>OPENING HOURS</span>
+                        <p>Tuesday - Sunday</p>
+                        <strong>10:00 - 18:00</strong>
+                        <small>Monday · Closed</small>
+                    </div>
+                    <a href="schedule.html" class="button button-outline">
+                        View schedule <span>↗</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-main">HORSE CLUB</span>
+                    <span class="logo-sub">BĂLȚI · MOLDOVA</span>
+                </a>
+                <p class="footer-tagline">
+                    A timeless bond between horse and human.
                 </p>
-
-        </section>
-
-        <section class="about" id="about">
-            <div class="about-image">
-                <img src="IMG002.jpg" alt="Лошадь">
+                <div class="footer-bottom">
+                    <span>© 2026 Horse Club Bălți</span>
+                    <a href="contacts.html">Get in touch ↗</a>
+                </div>
             </div>
-            <div class="about-text">
-                <p class="section-label">
-                    О НАС
-                </p>
-                <h2>
-                    Больше, чем<br>
-                    просто <i>верховая езда</i>
-                </h2>
-                <p>
-                    Конный Клуб Бельцы — это место, где человек и лошадь учатся понимать друг друга.
-                </p>
-                <p>
-                    Мы проводим тренировки, прогулки, фотосессии и занятия для всадникоа разного возраста и уровня подготовки.
-                </p>
-                <a href="#services" class="text-button"> Узнать больше → </a>
-            </div>
-        </section>
-
+        </footer>
     </body>
+    </html>
+   
