@@ -466,3 +466,134 @@ button:focus-visible{
     outline: 2px solid var(--color-gold);
     outline-offset: 5px;
 }
+@media (max-width: 1024px) {
+    .main-nav {
+        gap: 17px;
+    }
+    .nav-link {
+        font-size: 11px;
+    }
+    .about-grid {
+        gap: 45px;
+    }
+    .service-grid {
+         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .visit-inner {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:767px) {
+    .header-inner {
+        min-height: 78px;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-block: 15px;
+    }
+    .logo-main {
+        font-size: 18px;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding-top: 12px;
+    }
+    .main-nav.is-open {
+        display: flex;
+    }
+    .nav-link {
+        padding: 14px 0;
+        border-top: 1px solid rgba(197, 163, 106, 0);
+        font-size: 12px;
+    }
+    .nav-link.active::after {
+        display: none;
+    }
+    .hero {
+        min-height: 690px;
+        min-height: 85svh;
+    }
+    .hero-image {
+        background-position: 58% center;
+    }
+    .hero-shade {
+        background: linear-gradient(90deg, rgba(36, 25, 20, 0.88), rgba(36, 25, 20, 0.4));
+    }
+    .hero-inner {
+        padding-block: 70px, 35px;
+    }
+    .hero-h1 {
+        font-size: clamp(64px, 16vw, 92px);
+        letter-spacing: -2px;
+    }
+    .hero-description {
+        max-width: 320px;
+        font-size: 13px;
+    }
+    .hero-bottom {
+        margin-top: 65px;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+    .section-padding {
+        padding-block: 75px;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .about h2, .section-heading h2 {
+        font-size: 40px;
+    }
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .service-card {
+        min-height: 320px;
+    }
+    .visit-section {
+        padding-block: 65px;
+    }
+    .visit-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .footer-inner {
+        grid-template-columns: 1 fr;
+    }
+    .footer-tagline {
+        justify-self: start;
+    }
+    .footer-bottom {
+        grid-column: auto;
+        flex-direction: wrap;
+    }
+}
+@media (max-width: 380px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+    .hero-bottom {
+        gap: 10px;
+    }
+    .service-card {
+        min-height: 280px;
+    }
+    .button {
+        gap: 15px;
+        padding-inline: 18px;
+    }
+}
